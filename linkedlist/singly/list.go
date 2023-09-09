@@ -13,6 +13,12 @@ type SinglyLinkedList struct {
 	Head *SinglyListNode
 }
 
+// instantiate a new empty list
+func New() *SinglyLinkedList {
+	sll := &SinglyLinkedList{}
+	return sll
+}
+
 // insert a node at head
 func (sll *SinglyLinkedList) AddHead(val int)  {
 	node := &SinglyListNode{

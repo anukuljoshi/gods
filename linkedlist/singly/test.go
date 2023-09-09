@@ -5,7 +5,7 @@ import (
 )
 
 func SinglyLinkedListTest() {
-	sll := &SinglyLinkedList{}
+	sll := New()
 	var key, val int
 	val = 1
 	fmt.Println("*********** AddHead", val)

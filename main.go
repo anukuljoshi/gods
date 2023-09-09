@@ -5,12 +5,14 @@ import (
 
 	"github.com/anukuljoshi/gods/linkedlist/doubly"
 	"github.com/anukuljoshi/gods/linkedlist/singly"
+	"github.com/anukuljoshi/gods/stack/array"
 )
 
 
 func main() {
 	fmt.Println("1: Singly Linked List")
 	fmt.Println("2: Doubly Linked List")
+	fmt.Println("3: Stack")
 	fmt.Print("Enter your choice: ")
 	var choice int
 	fmt.Scanf("%d", &choice)
@@ -21,6 +23,8 @@ func main() {
 	case 2:
 		// test function for doubly linked list
 		doubly.DoublyLinkedListTest()
+	case 3:
+		array.StackTest()
 	default:
 		fmt.Println("Incorrect Choice")
 	}

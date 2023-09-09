@@ -1,9 +1,11 @@
 package doubly
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func DoublyLinkedListTest()  {
-	dll := &DoublyLinkedList{}
+	dll := New()
 	var key, val int
 	val = 1
 	fmt.Println("*********** AddHead", val)
@@ -80,15 +82,11 @@ func DoublyLinkedListTest()  {
 	dll.DeleteKey(key)
 	dll.Print()
 	key = 4
-	fmt.Println("*********** Find", key)
-	fmt.Println(key, "found:",  dll.Find(key))
+	fmt.Println("*********** Contains", key, dll.Contains(key))
 	key = 10
-	fmt.Println("*********** Find", key)
-	fmt.Println(key, "found:",  dll.Find(key))
+	fmt.Println("*********** Contains", key, dll.Contains(key))
 	key = 11
-	fmt.Println("*********** Find", key)
-	fmt.Println(key, "found:",  dll.Find(key))
+	fmt.Println("*********** Contains", key, dll.Contains(key))
 	key = 100
-	fmt.Println("*********** Find", key)
-	fmt.Println(key, "found:",  dll.Find(key))
+	fmt.Println("*********** Contains", key, dll.Contains(key))
 }

@@ -14,6 +14,12 @@ type DoublyLinkedList struct {
 	Head *DoublyListNode
 }
 
+// instantiate new empty list
+func New() *DoublyLinkedList{
+	dll := &DoublyLinkedList{}
+	return dll
+}
+
 // add to head
 func (dll *DoublyLinkedList) AddHead(val int) {
 	node := &DoublyListNode{
@@ -184,13 +190,14 @@ func (dll *DoublyLinkedList) DeleteKey(key int) {
 		dll.DeleteTail()
 		return
 	}
-	prev.Next = ptr
+	prev.Next = ptr.Next
 	ptr.Next.Prev = prev
 	dll.Head = dummy.Next
+	dll.Head.Prev = nil
 }
 
 // find a key in list
-func (dll *DoublyLinkedList) Find(key int) bool {
+func (dll *DoublyLinkedList) Contains(key int) bool {
 	ptr := dll.Head
 	for ptr!=nil {
 		if ptr.Val==key {

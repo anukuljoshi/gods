@@ -165,7 +165,7 @@ func (sll *SinglyLinkedList) DeleteKey(key int) {
 }
 
 // find key in list
-func (sll *SinglyLinkedList) Find(key int) bool {
+func (sll *SinglyLinkedList) Contains(key int) bool {
 	ptr := sll.Head
 	for ptr!=nil {
 		if ptr.Val==key {

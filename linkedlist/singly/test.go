@@ -82,15 +82,11 @@ func SinglyLinkedListTest() {
 	sll.DeleteKey(key)
 	sll.Print()
 	key = 4
-	fmt.Println("*********** Find", key)
-	fmt.Println(key, "found:",  sll.Find(key))
+	fmt.Println("*********** Contains", key, sll.Contains(key))
 	key = 10
-	fmt.Println("*********** Find", key)
-	fmt.Println(key, "found:",  sll.Find(key))
+	fmt.Println("*********** Contains", key, sll.Contains(key))
 	key = 11
-	fmt.Println("*********** Find", key)
-	fmt.Println(key, "found:",  sll.Find(key))
+	fmt.Println("*********** Contains", key, sll.Contains(key))
 	key = 100
-	fmt.Println("*********** Find", key)
-	fmt.Println(key, "found:",  sll.Find(key))
+	fmt.Println("*********** Contains", key, sll.Contains(key))
 }

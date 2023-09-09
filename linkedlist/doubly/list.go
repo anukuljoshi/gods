@@ -209,7 +209,7 @@ func (dll *DoublyLinkedList) Contains(key int) bool {
 }
 
 // find length of list
-func (dll *DoublyLinkedList) Length() int {
+func (dll *DoublyLinkedList) Size() int {
 	ptr := dll.Head
 	length := 0
 	for ptr!=nil {

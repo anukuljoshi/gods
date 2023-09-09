@@ -183,7 +183,7 @@ func (sll *SinglyLinkedList) Contains(key int) bool {
 }
 
 // find length of LinkedList
-func (sll *SinglyLinkedList) Length() int {
+func (sll *SinglyLinkedList) Size() int {
 	ptr := sll.Head
 	length := 0
 	for ptr!=nil {

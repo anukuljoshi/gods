@@ -1,4 +1,4 @@
-package liststack
+package list_stack
 
 import "fmt"
 

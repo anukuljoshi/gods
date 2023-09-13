@@ -1,4 +1,4 @@
-package slicestack
+package slice_stack
 
 import (
 	"fmt"

@@ -5,8 +5,8 @@ import (
 
 	"github.com/anukuljoshi/gods/linkedlist/doubly"
 	"github.com/anukuljoshi/gods/linkedlist/singly"
-	"github.com/anukuljoshi/gods/stacks/liststack"
-	"github.com/anukuljoshi/gods/stacks/slicestack"
+	"github.com/anukuljoshi/gods/stacks/list_stack"
+	"github.com/anukuljoshi/gods/stacks/slice_stack"
 )
 
 
@@ -27,10 +27,10 @@ func main() {
 		doubly.DoublyLinkedListTest()
 	case 3:
 		// test function for slice stack
-		slicestack.SliceStackTest()
+		slice_stack.SliceStackTest()
 	case 4:
 		// test function for linked list stack
-		liststack.ListStackTest()
+		list_stack.ListStackTest()
 	default:
 		fmt.Println("Incorrect Choice")
 	}

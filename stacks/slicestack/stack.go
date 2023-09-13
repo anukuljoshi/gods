@@ -7,17 +7,17 @@ import (
 
 type Stack []int
 
-// size
+// get size of stack
 func (s *Stack) Size() int {
 	return len(*s)
 }
 
-// isEmpty
+// check if stack is empty
 func (s *Stack) IsEmpty() bool {
 	return s.Size()==0
 }
 
-// top
+// get element from top of stack
 func (s *Stack) Top() (int, error) {
 	if s.IsEmpty() {
 		return -1, errors.New("stack is empty")
@@ -25,12 +25,12 @@ func (s *Stack) Top() (int, error) {
 	return (*s)[s.Size()-1], nil
 }
 
-// push
+// push element to top of stack
 func (s *Stack) Push(val int) {
 	(*s) = append((*s), val)
 }
 
-// pop
+// pop element from top of stack
 func (s *Stack) Pop() (int, error) {
 	val, err := s.Top()
 	if err!=nil {
@@ -40,7 +40,7 @@ func (s *Stack) Pop() (int, error) {
 	return val, nil
 }
 
-// print
+// print elements in stack
 func (s *Stack) Print() {
 	fmt.Println(*s)
 }

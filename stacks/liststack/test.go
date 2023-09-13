@@ -1,11 +1,9 @@
-package slicestack
+package liststack
 
-import (
-	"fmt"
-)
+import "fmt"
 
-func SliceStackTest() {
-	var s Stack
+func ListStackTest() {
+	var s = New()
 	var val int
 	fmt.Println("******* IsEmpty", s.IsEmpty())
 	for i:=1;i<=5;i++ {

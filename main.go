@@ -22,10 +22,6 @@ func main() {
 	fmt.Print("Enter your choice: ")
 	var choice int
 	fmt.Scanf("%d", &choice)
-	
-	fmt.Println("testing empty list")
-	l := singly.New()
-	fmt.Println(l.Size())
 	switch choice {
 	case 1:
 		// test function for singly linked list

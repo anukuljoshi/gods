@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	"github.com/anukuljoshi/gods/heap"
 	"github.com/anukuljoshi/gods/linkedlist/doubly"
 	"github.com/anukuljoshi/gods/linkedlist/singly"
 	"github.com/anukuljoshi/gods/queue/list_queue"
@@ -19,6 +20,7 @@ func main() {
 	fmt.Println("4: Stack using LinkedList")
 	fmt.Println("5: Queue using Slice")
 	fmt.Println("6: Queue using LinkedList")
+	fmt.Println("7: Min Heap")
 	fmt.Print("Enter your choice: ")
 	var choice int
 	fmt.Scanf("%d", &choice)
@@ -41,6 +43,9 @@ func main() {
 	case 6:
 		// test function for list queue
 		list_queue.ListQueueTest()
+	case 7:
+		// test function for heap
+		heap.MinHeapTest()
 	default:
 		fmt.Println("Incorrect Choice")
 	}

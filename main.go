@@ -21,6 +21,7 @@ func main() {
 	fmt.Println("5: Queue using Slice")
 	fmt.Println("6: Queue using LinkedList")
 	fmt.Println("7: Min Heap")
+	fmt.Println("8: Max Heap")
 	fmt.Print("Enter your choice: ")
 	var choice int
 	fmt.Scanf("%d", &choice)
@@ -46,6 +47,9 @@ func main() {
 	case 7:
 		// test function for heap
 		heap.MinHeapTest()
+	case 8:
+		// test function for heap
+		heap.MaxHeapTest()
 	default:
 		fmt.Println("Incorrect Choice")
 	}
